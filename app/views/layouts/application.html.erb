@@ -28,17 +28,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/kitchen">Kitchen</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact_us">Contact Us</a></li>
+            <li><%= link_to "Kitchen", "kitchen" %></li>
+            <li><%= link_to "About", "about" %></li>
+            <li><%= link_to "Contact Us", "contact_us" %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/gen_settings">General Settings</a></li>
-                <li><a href="/privacy">Privacy</a></li>
-                <li><a href="/terms_conditions">Terms & Conditions</a></li>
+                <li><%= link_to "General Settings", "gen_settings" %></li>
+                <li><%= link_to "Privacy", "privacy" %></li>
+                <li><%= link_to "Terms & Conditions", "terms_conditions" %></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Log Out</a></li>
+                <li><%= link_to "Log Out", "/" %></li>
               </ul>
             </li>
           </ul>
@@ -48,12 +48,24 @@
       <%= yield %>
     <footer class="footer">
         <div class="container text-center">
-            <a href="#"><i class="fa fa-codiepie"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <%= link_to "https://munch-it-jakubjencik.c9users.io/" do %>
+              <i class="fa fa-codiepie"></i>
+            <% end %>
+            <%= link_to "https://ww.facebook.com/" do %>
+              <i class="fa fa-facebook"></i>
+            <% end %>
+            <%= link_to "https://www.twitter.com/" do %>
+              <i class="fa fa-twitter"></i>
+            <% end %>
+            <%= link_to "https://www.linkedin.com/" do %>
+              <i class="fa fa-linkedin"></i>
+            <% end %>
+            <%= link_to "https://plus.google.com/" do %>
+              <i class="fa fa-google-plus"></i>
+            <% end %>
+            <%= link_to "https://www.youtube.com/" do %>
+              <i class="fa fa-youtube-play"></i>
+            <% end %>
         </div><!--End container-->
     </footer><!--End footer 2-->
   </body>

@@ -30,7 +30,7 @@ h2, h3, h4, h5, h6 {
 }
 
 //Home Page Style
-.home-callout, .what, .footer {
+.home-callout, .b-banner, .footer {
     border: none;
     // Gradient provided by @_ighosh at https://uigradients.com/#
     background: #ECE9E6; /* fallback for old browsers */
@@ -86,7 +86,7 @@ textarea:focus, input:focus, .uneditable-input:focus {
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color: #faebd7;
-    &:hover {
+    &:hover, &:focus {
         color: #faebd7;
         opacity: 0.75;
     }
@@ -104,6 +104,10 @@ textarea:focus, input:focus, .uneditable-input:focus {
     border: none;
 }
 
+//Bottom What we do panel
+.b-banner {
+    padding-top: 30px;
+}
 
 //Footer
 .footer {
@@ -129,6 +133,3 @@ textarea:focus, input:focus, .uneditable-input:focus {
     transition: all .5s ease;
 }
 
-.what {
-    padding-top: 30px;
-}

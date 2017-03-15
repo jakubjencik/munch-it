@@ -18,7 +18,7 @@
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
 
-// Font Styles
+// Typography Styles
 h1 {
     font-family: 'Clicker Script', cursive;
     font-size: 40px;
@@ -29,7 +29,7 @@ h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-//Home Page Style
+//Background Gradients
 .home-callout, .b-banner, .footer {
     border: none;
     // Gradient provided by @_ighosh at https://uigradients.com/#
@@ -37,51 +37,14 @@ h2, h3, h4, h5, h6 {
     background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.home-callout {
-    border: none;
-    margin-top: -20px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-.main-banner {
-    background: url('foodshare.JPG');
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-//Sign Up Form
-
-.sign-up {
-    margin-top: -20px;
-    margin-bottom: -20px;
-    border-radius: 6px;
-    color: #faebd7;
-    background-color: #232526;
-    opacity: 0.90;
-}
-textarea:focus, input:focus, .uneditable-input:focus {   
-    border-color: rgba(250, 235, 215, 1) !important;
-    box-shadow: 0 2px 2px rgba(250, 235, 215, 1) inset, 0 0 8px rgba(250, 235, 215, 1) !important;
-    outline: 0 none !important;
-}
-
-.btn-default {
-    margin-bottom: 20px;
-    &:focus {
-        border-color: rgba(250, 235, 215, 1) !important;
-        box-shadow: 0 2px 2px rgba(250, 235, 215, 1) inset, 0 0 8px rgba(250, 235, 215, 1) !important;
-        outline: 0 none !important;
-    }
-}
-
-//Navbar Style
 .navbar {
     border: none;
     // Gradient provided by @_ighosh at https://uigradients.com/#
     background: #232526; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+//Navbar Styles
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
@@ -102,11 +65,6 @@ textarea:focus, input:focus, .uneditable-input:focus {
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
-}
-
-//Bottom What we do panel
-.b-banner {
-    padding-top: 30px;
 }
 
 //Footer
@@ -133,3 +91,40 @@ textarea:focus, input:focus, .uneditable-input:focus {
     transition: all .5s ease;
 }
 
+//Home Page Style
+
+.home-callout {
+    border: none;
+    margin-top: -20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.main-banner {
+    background: url('foodshare.JPG');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.b-banner {
+    padding-top: 30px;
+}
+
+//Sign Up Form
+.sign-up {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    border-radius: 6px;
+    color: #faebd7;
+    background-color: #232526;
+    opacity: 0.90;
+}
+textarea:focus, input:focus, .uneditable-input:focus, .btn-default:focus {   
+    border-color: rgba(250, 235, 215, 1) !important;
+    box-shadow: 0 2px 2px rgba(250, 235, 215, 1) inset, 0 0 8px rgba(250, 235, 215, 1) !important;
+    outline: 0 none !important;
+}
+
+.btn-default {
+    margin-bottom: 20px;
+}

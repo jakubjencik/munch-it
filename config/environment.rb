@@ -12,4 +12,4 @@ ActionMailer::Base.smtp_settings = {
     :domain => 'http://fierce-woodland-32894.herokuapp.com/',
     :authentication => :plain,
 }
-ActionMailer::Base.deliver_method = :smtp
+ActionMailer::Base.delivery_method = :smtp

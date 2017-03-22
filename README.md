@@ -31,3 +31,23 @@ Things you may want to cover:
 *   
 
 * ...
+* 22/03/2017
+*           Contact Form
+*   Rename Link & Form to Feedback
+*       - renamed link in navbar
+*       - renamed form in new.html.erb
+*           - added comment
+*           - placed header and comment into a seperate div to match the form width
+*   Create Contacts Database
+*       - generate migration file: rails generate migration CreateContacts
+*       - in ...create_contacts.rb: t.string :name
+*                                   t.string :email
+*                                   t.text :comments
+*                                   t.timestamps
+*       - add db to log: rails db:migrate
+*   Create Model files
+*   Add Hirb Gem
+*   Set Up Form Validation
+*   Create Mailer
+*   Install and Deploy to heroku
+*   Link with MailGun

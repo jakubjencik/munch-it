@@ -13,3 +13,6 @@ module Saasapp
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+# Required for Heroku in order to show images in assets pipeline
+config.serve_static_assets = true

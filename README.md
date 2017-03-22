@@ -48,6 +48,10 @@ Things you may want to cover:
 *   Create Model files
 *   Add Hirb Gem
 *   Set Up Form Validation
+*   Change contact_new url to feedback
 *   Create Mailer
+*       - create an html contact_email template
+*       - create contact_mailer.rb in mailers
+*       - amend environment.rb
 *   Install and Deploy to heroku
-*   Link with MailGun
+*   Install and Link with MailGun

@@ -9,7 +9,7 @@ ActionMailer::Base.smtp_settings = {
     :address =>ENV['MAILGUN_SMTP_SERVER'],
     :user_name =>ENV['MAILGUN_SMTP_LOGIN'],
     :password =>['MAILGUN_SMTP_PASSWORD'],
-    :domain => 'http://fierce-woodland-32894.herokuapp.com/',
+    :domain => 'https://fierce-woodland-32894.herokuapp.com/',
     :authentication => :plain,
 }
 ActionMailer::Base.delivery_method = :smtp
